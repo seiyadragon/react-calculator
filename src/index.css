@@ -1,0 +1,102 @@
+@keyframes color {
+    0%   { background: #33CCCC; }
+    20%  { background: #33CC36; }
+    40%  { background: #B8CC33; }
+    60%  { background: #FCCA00; }
+    80%  { background: #33CC36; }
+    100% { background: #33CCCC; }
+}
+
+body {
+    background: #33CCCC;
+    text-align: center;
+    animation: color 9s infinite linear;
+}
+
+.container {
+   margin-top: 5%;
+   margin-bottom: 10%;
+   margin-left: 30%;
+   margin-right: 30%;
+   background-color: rgb(31, 30, 30);
+   border-radius: 10%;
+   border-color: blueviolet;
+   border-style: solid;
+}
+
+.textfield {
+    resize: none;
+    background-color: rgb(56, 55, 55);
+    font-size: 140%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: cursive;
+    color: whitesmoke;
+    border-style: hidden inset hidden outset;
+    border-color: blueviolet;
+    display: block;
+    float: center;
+    border-width: 3px;
+    margin-bottom: 3%;
+    width: 88.6%;
+}
+
+.textfield::placeholder {
+    color: whitesmoke;
+}
+
+.textfield:focus {
+    outline: none;
+}
+
+.button {
+    font-size: 140%;
+    background-color: rgb(56, 55, 55);
+    color: whitesmoke;
+    margin-bottom: 10%;
+    font-family: cursive;
+    border-style: solid;
+    border-color: blueviolet;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-width: 3px;
+    border-style: hidden solid hidden solid;
+}
+
+.button:hover {
+    background-color: rgb(78, 77, 77);
+}
+
+.container h3 {
+    text-align: left;
+    background-color: rgb(56, 55, 55);
+    margin: 0%;
+    font-family: cursive;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: whitesmoke;
+    border-style: hidden inset hidden outset;
+    border-color: blueviolet;
+    border-bottom: dotted;
+    border-bottom-color: rgb(70, 70, 70);
+}
+
+.answer {
+    text-align: right;
+    background-color: rgb(56, 55, 55);
+    margin: 0%;
+    font-family: cursive;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: red;
+}
+
+.container h1 {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 300%;
+    font-style: oblique;
+    color: blueviolet;
+    text-decoration: underline;
+}
