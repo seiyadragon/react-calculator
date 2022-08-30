@@ -1,6 +1,6 @@
 import Container from "./Container";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Container />
