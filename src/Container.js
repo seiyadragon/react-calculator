@@ -11,7 +11,7 @@ const Container = () => {
     const [opList, setOpList] = useState([])
     const [lastOp, setLastOp] = useState('')
     const [scrollRange, setScrollRange] = useState([0, inititalScrollRange])
-    const [vars, setVars] = useState([ ({name: 'blaze', value: '420'})])
+    const [vars, setVars] = useState([ ({name: 'prev', value: '0'})])
 
     const submit = () => {
         setOpList([...opList, lastOp])
@@ -51,12 +51,16 @@ const Container = () => {
             scrollDown()
     }
 
+    const setVarsFromChild = (array) => {
+        setVars(array)
+    }
+
     return (
         <div className='container'>
             <h1>React Calculator</h1>
             {opList.map((op, index) => {
                 if (index >= scrollRange[0] && index <= scrollRange[1])
-                    return <Operation key={random()} chars={op} vars={vars}/>
+                    return <Operation key={random()} chars={op} vars={vars} unmodifiedChars={opList.at(index)} setVars={setVarsFromChild} prev={opList.at(index - 1)}/>
             })}
 
             <Textfield text={lastOp} placeholder='Type here...' onCalClick={onCalClick} onChange={onTextChange} onClear={onClear} onKeyDown={onKeyDown}/>

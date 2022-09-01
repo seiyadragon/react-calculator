@@ -1,16 +1,16 @@
 @keyframes color {
-    0%   { background: #33CCCC; }
-    20%  { background: #33CC36; }
-    40%  { background: #B8CC33; }
-    60%  { background: #FCCA00; }
-    80%  { background: #33CC36; }
-    100% { background: #33CCCC; }
+    0%   { background: #420000; }
+    20%  { background: #10247e; }
+    40%  { background: #069150; }
+    60%  { background: #886a07; }
+    80%  { background: #dd0505; }
+    100% { background: #420000; }
 }
 
 body {
-    background: #33CCCC;
+    background: #420000;
     text-align: center;
-    animation: color 9s infinite linear;
+    animation: color 18s infinite linear;
 }
 
 .container {
